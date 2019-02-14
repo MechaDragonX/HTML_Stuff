@@ -1,0 +1,4 @@
+saveData()
+{
+	window.alert("Saved!");
+}

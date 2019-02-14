@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Table Land</title>
+    </head>
+    <body>
+        <h2>Please type in your information here.</h2> <br>
+        <button id="cmdToggle" onclick="toggle.js">Show</button>
+        <table style="width:100%;visibility:collapse;"  id="mainTable">
+            <tr>
+                <td>Name</td>
+                <td>
+                    <input type="text" id="name" onblur="blankField.js" >
+                </td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td>
+                    <input type="text" name="age" >
+                </td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td>
+                    <input type="text" name="address">
+                </td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td>
+                    <select name="city">
+                        <option value="newyork">New York City</option>
+                        <option value="london">London</option>
+                        <option value="Paris">Paris</option>
+                        <option value="buneosaires">Buenos Aires</option>
+                        <option value="cairo">Cairo</option>
+                        <option value="beijing">Beijing</option>
+                        <option value="tokyo">Tokyo</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td>
+                    <select name="state">
+                        <option value="newyork">New York</option>
+                        <option value="greaterlondon">Greater London</option>
+                        <option value="ile">Île-de-France</option>
+                        <option value="ciudad">Ciudad de Buenos Aires</option>
+                        <option value="cairo">Cairo</option>
+                        <option value="beijing">Beijing Municipality</option>
+                        <option value="tokyo">Tokyo</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <button name="cmdSave" onclick="saveData.js">Submit</button>
+    </body>
+</html>
